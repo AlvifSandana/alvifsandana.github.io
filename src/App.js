@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import About from "./pages/About";
+import CurriculumVitae from "./pages/CurriculumVitae";
 import Home from "./pages/Home";
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
                 <Link className="nav-link" to="/posts">Posts</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/portfolio">Portfolio</Link>
+                <Link className="nav-link" to="/projects">Projects</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/cv">CV</Link>
@@ -32,7 +33,6 @@ function App() {
           </div>          
         </div>
       </nav>
-      <div className="App">
       <Switch>
           <Route path="/about">
             <About />
@@ -40,17 +40,16 @@ function App() {
           <Route path="/posts">
             <About />
           </Route>
-          <Route path="/portfolio">
+          <Route path="/projects">
             <About />
           </Route>
           <Route path="/cv">
-            <About />
+            <CurriculumVitae />
           </Route>
           <Route path="/">
             <Home />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
