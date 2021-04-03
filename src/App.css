@@ -14,14 +14,17 @@
 }
 
 .App-link {
-  color: #61dafb;
+  /* color: #61dafb; */
+  color: white;
 }
 
 .icons-social i {
   padding: 10px;
   font-size: 2em;
+  color: white;
 }
 
 .nav{
   background-color: #282c34;
 }
+

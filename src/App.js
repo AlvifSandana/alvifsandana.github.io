@@ -1,40 +1,54 @@
-import Typist from 'react-typist';
-import ReactRoundedImage from 'react-rounded-image';
-import logo from './image.webp';
-import './App.css';
-import config from './config.json'
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import About from "./pages/About";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <nav class="navbar navbar-dark nav">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1 text-white">ASM</span>
+    <Router>
+      {/* Navbar */}
+      <nav className="navbar fixed-top navbar-expand-lg navbar-dark nav">
+        <div className="container-fluid">
+          <Link className="navbar-brand mb-0 h1 text-white" to="/">ASM</Link>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">About</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/posts">Posts</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/portfolio">Portfolio</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/cv">CV</Link>
+              </li>
+            </ul>
+          </div>          
         </div>
       </nav>
-      <header className="App-header">
-        <ReactRoundedImage 
-          image={logo}
-          roundedColor="#ffffff"
-          roudedSize="13"/><br/>
-        <p>
-          <h1>Hi, I am Alvif Sandana Mahardika</h1>
-          <Typist>
-            Backend Developer | Desktop Developer | Linux 
-          </Typist>
-        </p><br/>
-        <div className="icons-social">
-          {config.icons.map(icon => (
-            <a 
-              target="_blank"
-              rel="noopener noreferrer"
-              href={ `${icon.url}` }>
-                <i className={ `fab ${icon.img}` }></i>
-              </a>
-          ))}
-        </div>
-      </header>
-    </div>
+      <div className="App">
+      <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/posts">
+            <About />
+          </Route>
+          <Route path="/cv">
+            <About />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
