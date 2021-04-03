@@ -40,6 +40,9 @@ function App() {
           <Route path="/posts">
             <About />
           </Route>
+          <Route path="/portfolio">
+            <About />
+          </Route>
           <Route path="/cv">
             <About />
           </Route>
