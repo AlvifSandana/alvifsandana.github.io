@@ -5,6 +5,7 @@ import About from "./pages/About";
 import CurriculumVitae from "./pages/CurriculumVitae";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Posts from './pages/Posts';
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
             <About />
           </Route>
           <Route path="/posts">
-            <About />
+            <Posts />
           </Route>
           <Route path="/projects">
             <Projects />
