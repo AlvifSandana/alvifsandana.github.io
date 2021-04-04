@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./pages/About";
 import CurriculumVitae from "./pages/CurriculumVitae";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
             <About />
           </Route>
           <Route path="/projects">
-            <About />
+            <Projects />
           </Route>
           <Route path="/cv">
             <CurriculumVitae />
