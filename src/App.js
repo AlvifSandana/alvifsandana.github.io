@@ -23,9 +23,6 @@ function App() {
                 <Link className="nav-link" to="/about">About</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/posts">Posts</Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link" to="/projects">Projects</Link>
               </li>
               <li className="nav-item">
@@ -38,9 +35,6 @@ function App() {
       <Switch>
           <Route path="/about">
             <About />
-          </Route>
-          <Route path="/posts">
-            <Posts />
           </Route>
           <Route path="/projects">
             <Projects />
