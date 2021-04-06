@@ -1,3 +1,12 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
 .App {
   text-align: center;
 }
@@ -19,9 +28,22 @@
 }
 
 .icons-social i {
+  margin-top: 50px;
   padding: 10px;
-  font-size: 1,8em;
+  font-size: 2em;
   color: white;
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ase-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+} 
+
+.icons-social i:hover{
+  color: #26b7e0;
+}
+
+.myname{
+  font-size: 3em;
 }
 
 .nav{

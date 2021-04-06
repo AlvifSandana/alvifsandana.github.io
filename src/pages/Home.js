@@ -7,12 +7,12 @@ function Home(){
     return (
       <div className="App">
         <header className="App-header">
-          <p>
-            <h1 className="myname">Hi, I am {config.fullname}</h1>
+
+            <h1 className="myname">{config.fullname}</h1>
             <Typist>
               <span>{config.description}</span>
             </Typist>
-          </p>
+
           <div className="icons-social">
             {config.icons.map((icon, i) => (
               <a
