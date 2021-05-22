@@ -9,7 +9,7 @@ class GithubCards extends React.Component {
   };
 
   async componentDidMount() {
-    const apikey = process.env.REACT_APP_APIKEY;
+    // const apikey = process.env.REACT_APP_APIKEY;
     let repo = [
       baseURL('jendela-pmi'),
       baseURL('xorencryption'),
@@ -20,12 +20,8 @@ class GithubCards extends React.Component {
 
     repo.map(
       async (url) => 
-        await Axios.get(url, {
-          headers: {
-            Authorization: `token ${apikey}`,
-          },
-        }).then(async (res) => {
-          await this.setState({
+        await Axios.get(url).then(async (res) => {
+          this.setState({
             repo: [...this.state.repo, res.data],
           })
         })
