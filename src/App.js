@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import About from "./pages/About";
-import CurriculumVitae from "./pages/CurriculumVitae";
+import config from './config.json';
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
@@ -30,7 +30,7 @@ function App() {
                 <Link className="nav-link" to="/skills">Skills</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/cv">CV</Link>
+                <a className="nav-link" href={config.resume}>Resume</a>
               </li>
             </ul>
           </div>          
@@ -43,11 +43,8 @@ function App() {
           <Route path="/projects">
             <Projects />
           </Route>
-          <Router path="/skills">
+          <Route path="/skills">
             <Skills />
-          </Router>
-          <Route path="/cv">
-            <CurriculumVitae />
           </Route>
           <Route path="/">
             <Home />
