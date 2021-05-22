@@ -5,6 +5,8 @@ import About from "./pages/About";
 import CurriculumVitae from "./pages/CurriculumVitae";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
+require('dotenv').config();
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
                 <Link className="nav-link" to="/projects">Projects</Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" to="/skills">Skills</Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/cv">CV</Link>
               </li>
             </ul>
@@ -38,6 +43,9 @@ function App() {
           <Route path="/projects">
             <Projects />
           </Route>
+          <Router path="/skills">
+            <Skills />
+          </Router>
           <Route path="/cv">
             <CurriculumVitae />
           </Route>

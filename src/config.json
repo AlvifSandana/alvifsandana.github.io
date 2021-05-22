@@ -1,19 +1,53 @@
 {
-    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fermentum dignissim tellus at interdum. Ut mi erat, bibendum eu gravida quis, mattis dictum orci. Sed pharetra lacus odio, ac sagittis enim posuere at. Proin sit amet arcu ultricies, dictum erat vitae, tempus eros. Maecenas elementum massa in nunc porta, semper viverra leo porta. Donec egestas nunc sapien, eu pretium elit lacinia et. Morbi rhoncus, nisi eget tempus accumsan, dolor erat suscipit purus, at faucibus arcu risus ultricies diam. Donec finibus metus et luctus lacinia. Duis ornare ex ipsum, non sodales purus scelerisque eu. Aenean consectetur tellus id rutrum rutrum. Nulla commodo eros non consectetur efficitur. Ut tincidunt tortor odio, non finibus tortor ornare vel. Ut eget rutrum turpis, non vulputate lorem. Sed vel sem eget lectus laoreet facilisis quis sit amet nisi. Fusce interdum luctus neque in aliquet. Morbi id odio quam.",
+    "about": "Hi, my name is Alvif Sandana Mahardika. I am a second year student at STIKOM PGRI Banyuwangi. I am vary interested in mathematics, artificial intelligence, cryptography, back end, and mobile development. I was curious and started to like code since I was in grade 1 junior high school. Two years later I started learning programming languages. I think programming is amazing. I really enjoy when debugging an trying to find a solution for the program I am working on. I am very good at problem solving and enjoy both teamwork and individually.",
     "fullname": "Alvif Sandana Mahardika",
     "description": "| Backend Developer | Mobile Developer | Linux Lovers ",
     "icons": [
         {
-            "img": "fa-github",
+            "img": "fab fa-github",
             "url": "https://github.com/AlvifSandana/"
         },
         {
-            "img": "fa-twitter",
+            "img": "fab fa-twitter",
             "url": "https://twitter.com/siDandott/"
         },
         {
-            "img": "fa-instagram",
+            "img": "fab fa-instagram",
             "url": "https://instagram.com/alvifsandana23/"
+        },
+        {
+            "img": "fab fa-whatsapp",
+            "url": "https://wa.me/6281386219341"
+        },
+        {
+            "img": "fas fa-envelope",
+            "url": "mailto:alvifsandana@gmail.com"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Javascript",
+            "type": "js"
+        },
+        {
+            "name": "Python",
+            "type": "python"
+        },
+        {
+            "name":"HTML",
+            "type": "html5"
+        },
+        {
+            "name":"CSS",
+            "type": "css3"
+        },
+        {
+            "name":"ReactJS",
+            "type": "react"
+        },
+        {
+            "name":"Laravel",
+            "type": "laravel"
         }
     ]
 }

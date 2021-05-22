@@ -21,7 +21,7 @@ function Home(){
                 rel="noopener noreferrer"
                 href={`${icon.url}`}
               >
-                <i className={`fab ${icon.img}`}></i>
+                <i className={`${icon.img}`}></i>
               </a>
             ))}
           </div>
