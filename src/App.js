@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter, Switch, Route, Link } from "react-router-dom";
 
 import About from "./pages/About";
 import config from './config.json';
@@ -10,7 +10,7 @@ require('dotenv').config();
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       {/* Navbar */}
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark nav">
         <div className="container-fluid">
@@ -37,20 +37,12 @@ function App() {
         </div>
       </nav>
       <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/skills">
-            <Skills />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-    </Router>
+          <Route exact path="/about" component={About} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/skills" component={Skills} />
+          <Route exact path="/" component={Home} />
+      </Switch>
+    </HashRouter>
   );
 }
 
