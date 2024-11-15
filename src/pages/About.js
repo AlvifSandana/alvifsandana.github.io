@@ -1,5 +1,5 @@
 import React from "react";
-import myImg from "../image.webp";
+import myImg from "../me.jpg";
 import ReactRoundedImage from "react-rounded-image";
 import config from "../config.json";
 import "../App.css";

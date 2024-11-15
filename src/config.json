@@ -1,8 +1,8 @@
 {
-    "about": "Hi, my name is Alvif Sandana Mahardika. I am a second year student at STIKOM PGRI Banyuwangi. I am vary interested in mathematics, artificial intelligence, cryptography, back end, and mobile development. I was curious and started to like code since I was in grade 1 junior high school. Two years later I started learning programming languages. I think programming is amazing. I really enjoy when debugging an trying to find a solution for the program I am working on. I am very good at problem solving and enjoy both teamwork and individually.",
+    "about": "Hi, my name is Alvif Sandana Mahardika. I am a programmer at one of the large FMGC distributor companies in East Java. I am vary interested in mathematics, artificial intelligence, cryptography, back end, and mobile development. I was curious and started to like code since I was in grade 1 junior high school. Two years later I started learning programming languages. I think programming is amazing. I really enjoy when debugging an trying to find a solution for the program I am working on. I am very good at problem solving and enjoy both teamwork and individually.",
     "fullname": "Alvif Sandana Mahardika",
-    "description": "| Web Developer | Mobile Developer | Linux Lovers ",
-    "resume": "https://drive.google.com/file/d/1gI5QMdGKxUIoTIILd65Q3eLuJNWjink1/view?usp=sharing",
+    "description": "| Web & Mobile Developer | Linux Enthusias ",
+    "resume": "https://drive.google.com/file/d/18uCiIjtcbKXU5dX4TccETSFJUZuks1Op/view?usp=sharing",
     "icons": [
         {
             "img": "fab fa-github",
@@ -14,11 +14,11 @@
         },
         {
             "img": "fab fa-instagram",
-            "url": "https://instagram.com/alvifsandana23/"
+            "url": "https://instagram.com/alvifsandana24/"
         },
         {
             "img": "fab fa-whatsapp",
-            "url": "https://wa.me/6281386219341"
+            "url": "https://wa.me/62899802406"
         },
         {
             "img": "fas fa-envelope",
@@ -49,6 +49,10 @@
         {
             "name":"Laravel",
             "type": "laravel"
+        },
+        {
+            "name":"Linux",
+            "type": "linux"
         }
     ]
 }

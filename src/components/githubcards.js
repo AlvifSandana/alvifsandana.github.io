@@ -11,11 +11,12 @@ class GithubCards extends React.Component {
   async componentDidMount() {
     // const apikey = process.env.REACT_APP_APIKEY;
     let repo = [
-      baseURL('jendela-pmi'),
+      baseURL('rsid-backend'),
       baseURL('xorencryption'),
       baseURL('alvifsandana.github.io'),
       baseURL('mt7601u'),
-      baseURL('readline-nodejs')
+      baseURL('readline-nodejs'),
+      baseURL('keuangan-stikom'),
     ];
 
     repo.map(
